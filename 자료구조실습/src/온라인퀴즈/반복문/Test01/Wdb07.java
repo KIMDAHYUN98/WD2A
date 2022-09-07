@@ -1,6 +1,6 @@
-package 온라인퀴즈;
+package 온라인퀴즈.반복문.Test01;
 
-public class 반복문_07 {
+public class Wdb07 {
 	public static void main(String[] args) {
 		int sum = 0;
 		for(int i = 0; i < 5; i++)
@@ -9,7 +9,7 @@ public class 반복문_07 {
 			{
 				sum = sum + j;
 				i = i + 1;
-			}
+			} 
 		}
 		System.out.println(sum);
 	}
