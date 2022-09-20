@@ -14,7 +14,7 @@
 
 <%
 	String driverName = "org.mariadb.jdbc.Driver";
-	String url = "jdbc:mariadb://localhost:3307/book_db";
+	String url = "jdbc:mariadb://localhost/book_db";
 	String user = "root";
 	String passwd = "root";
 	

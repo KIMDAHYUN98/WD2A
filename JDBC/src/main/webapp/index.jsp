@@ -13,6 +13,8 @@
 
 <li><a href="./book_c.jsp">입력(C)</a>
 <li><a href="./book_r.jsp">조회(R)</a>
+<li><a href="./book_r2.jsp?currentPageNo=0">조회2(페이징, R2)</a>
+<li><a href="./book_r3.jsp?currentPageNo=0">조회3(페이징v2, 레코드 수 선택, R3)</a>
 <li><a href="./book_u.jsp">수정(U)</a>
 <li><a href="./book_d.jsp">삭제(D)</a>
 </body>

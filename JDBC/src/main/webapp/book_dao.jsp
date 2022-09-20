@@ -12,7 +12,7 @@
 <hr>
 <%
 	String driverName = "org.mariadb.jdbc.Driver";
-	String url = "jdbc:mariadb://localhost:3307/book_db";
+	String url = "jdbc:mariadb://localhost/book_db";
 	String user = "root";
 	String passwd = "root";
 	
@@ -24,15 +24,18 @@
 
 <%
 	String actionType = request.getParameter("actionType");
-	
+
 	int book_id;
 	String title;
 	String publisher;
 	String year;
 	int price;
+	int startNo;
+	int limitNo;
 	
 	String sql;
 	int result;
+	String result2;
 	String msg = "실행결과 : ";
 	
 	switch( actionType) {
@@ -59,10 +62,59 @@
 			}
 			
 			break;
-	}
-	%>
-	
-	<h2><%=msg%></h2>
+		
+		case "U":
+			book_id = Integer.parseInt(request.getParameter("book_id"));
+			System.out.println(book_id);
+			title = request.getParameter("title");
+			publisher = request.getParameter("publisher");
+			year = request.getParameter("year");
+			price = Integer.parseInt(request.getParameter("price"));
+			
+			sql = "UPDATE books SET title = '" + title + "' , publisher = '" + publisher + "' , year = '" + year
+					+ "', price = " + price + " where book_id = " + book_id;
+			
+			System.out.println(sql);
+			result = stmt.executeUpdate(sql);
+			
+			if(result == 1) {
+				System.out.println("레코드 수정 성공");
+				msg += "레코드 수정 성공";
+			}
+			else {
+				System.out.println("레코드 수정 실패");
+				msg += "레코드 수정 실패";
+			}
+			
+			break;	
+		
+		case "D" :
+			book_id = Integer.parseInt(request.getParameter("book_id"));
+			sql = "DELETE FROM books WHERE book_id = " + book_id; 
+			
+			System.out.println(sql);
+			result = stmt.executeUpdate(sql);
+			
+			if(result == 1) {
+				System.out.println("레코드 삭제 성공");
+				msg += "레코드 삭제 성공";
+			}
+			else {
+				System.out.println("레코드 삭제 실패");
+				msg += "레코드 삭제 실패";
+			}
+			
+			break;
+			/* startNo = Integer.parseInt(request.getParameter("startNo"));
+			sql = "SELECT * FROM books order by book_id limit " + startNo
+					+ ", " + 10;
+			System.out.println(sql);
+			ResultSet rs = stmt.executeQuery(sql); */
+	}	
+
+%>
+
+<h2><%=msg%></h2>
 	
 	<br><a href="./index.jsp">홈으로 돌아가기</a>
 </body>

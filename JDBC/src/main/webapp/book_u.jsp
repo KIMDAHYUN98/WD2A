@@ -32,7 +32,6 @@
 	String sql = "SELECT * FROM books ORDER BY book_id";
 	ResultSet rs = stmt.executeQuery(sql);
 	%>
-
 	<table border="1">
 		<thead>
 			<tr>
@@ -54,12 +53,12 @@
 				price = rs.getInt("price");
 			%>
 			<tr>
-				<td><%=book_id%></td>
+				<td><input type="hidden" name="book_id" value="<%=book_id%>"><%=book_id%></td>
 				<td><%=title%></td>
 				<td><%=publisher%></td>
 				<td><%=year%></td>
 				<td><%=price%></td>
-				<td><a href="./book_u2.jsp">수정</a></td>
+				<td><a href="./book_u2.jsp?book_id=<%=book_id%>">수정</a></td>
 			</tr>
 			<%
 				}

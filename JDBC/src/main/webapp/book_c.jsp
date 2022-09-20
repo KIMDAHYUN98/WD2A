@@ -15,8 +15,8 @@
 	<br>출판사 : <input type="text" name="publisher" size="30">
 	<br>출판년도 : <input type="text" name="year" size="30">
 	<br>가격 : <input type="text" name="price" size="30">
-	<br><input type="hidden" name="actionType" size="30">
-	<br><input type="submit" value="저장">
+	<input type="hidden" name="actionType" value="C">
+	<br><input type="submit" value="저장" >
 </form>
 
 <br><a href="./index.jsp">홈으로 돌아가기</a>
