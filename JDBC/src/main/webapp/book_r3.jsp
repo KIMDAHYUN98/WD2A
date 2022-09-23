@@ -151,7 +151,7 @@
 <%
 	}
 	// [1] [2] [3] ... [9] [10] 페이지 번호 버튼
-	for(int i = currentPageNo; i < currentPageNo + 10; i++){
+	for(int i = (currentPageNo / 10) * 10; i < ((currentPageNo / 10) * 10)+ 10; i++){
 		if( i == currentPageNo ) {
 %>
 			[<%=(i+1)%>]
@@ -177,7 +177,7 @@
 %>
 	[NXT]
 <%
-	}
+	}    
 %>
 
 <a href="./book_r3.jsp?currentPageNo=<%=(pageCnt-1)%>&range=<%=range%>">[END]</a>
