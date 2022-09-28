@@ -77,7 +77,7 @@
 	while (rs2.next()) {
 		// 레코드 총 갯수
 		recordCnt = rs2.getInt(1);
-	}
+	}k
 
 	// 페이지 번호 갯수
 	pageCnt = recordCnt / range;

@@ -105,11 +105,6 @@
 			}
 			
 			break;
-			/* startNo = Integer.parseInt(request.getParameter("startNo"));
-			sql = "SELECT * FROM books order by book_id limit " + startNo
-					+ ", " + 10;
-			System.out.println(sql);
-			ResultSet rs = stmt.executeQuery(sql); */
 	}	
 
 %>
