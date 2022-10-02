@@ -17,6 +17,7 @@ public class PrimeNumber2 {
 		int ptr=0; 					// 저장된 소수의 개수
 //		System.out.print("2, ");
 //		초기에 2를 소수 배열에 넣는다
+		
 		prime[ptr++] = 2;
 		for (i = 3; i < 1000; i=i+2) {
 			isPrime = true;
