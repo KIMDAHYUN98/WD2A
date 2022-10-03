@@ -17,5 +17,7 @@
 <li><a href="./book_r3.jsp?currentPageNo=0&range=10">조회3(페이징v2, 레코드 수 선택, R3)</a>
 <li><a href="./book_u.jsp">수정(U)</a>
 <li><a href="./book_d.jsp">삭제(D)</a>
+<li><a href="member/memberJoinForm.jsp">회원가입</a>
+<li><a href="member/memberSelect.jsp">회원정보 조회</a>
 </body>
 </html>
