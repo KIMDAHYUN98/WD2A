@@ -69,6 +69,6 @@
 
 <h2><%=msg%></h2>
 
-	<br><a href="../index.jsp">홈으로 돌아가기</a>
+<br><a href="../index.jsp">홈으로 돌아가기</a>
 </body>
 </html>

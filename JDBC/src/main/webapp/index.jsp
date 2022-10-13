@@ -18,6 +18,7 @@
 <li><a href="./book_u.jsp">수정(U)</a>
 <li><a href="./book_d.jsp">삭제(D)</a>
 <li><a href="member/memberJoinForm.jsp">회원가입</a>
+<li><a href="member/memberLoginForm.jsp">로그인</a>
 <li><a href="member/memberSelect.jsp">회원정보 조회</a>
 </body>
 </html>
