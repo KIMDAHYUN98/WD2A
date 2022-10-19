@@ -1,4 +1,4 @@
-package 실습.p220915;
+package 실습.별찍기.p220915;
 
 import java.util.Scanner;
 
