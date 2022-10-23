@@ -1,7 +1,7 @@
 package 실습.스택;
 
 import java.util.Scanner;
-
+ 
 public class IntStackTester {
 	private int[] stk;
 	private int capacity;
