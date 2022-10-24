@@ -15,5 +15,5 @@ public class JudgeSign {
 			System.out.println("이 수는 음수입니다.");
 		else
 			System.out.println("이 수는 0입니다.");
-	}
+	} 
 }
