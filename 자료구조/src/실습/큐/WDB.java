@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class WDB {
 	public static void main(String[] args) {
-		Scanner stdIn = new Scanner(System.in);
+		Scanner stdIn = new Scanner(System.in); 
 		IntArrayQueue2 s = new IntArrayQueue2(64); // 최대 64개를 푸시할 수 있는 큐
 
 		while (true) {
