@@ -12,7 +12,7 @@ class IntStack {
 	public class EmptyIntStackException extends RuntimeException {
 		public EmptyIntStackException() {
 			System.out.println("김다현");
-		}
+		} 
 	}
 
 //--- 실행시 예외: 스택이 가득 참 ---//
