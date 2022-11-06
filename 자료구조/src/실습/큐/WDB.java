@@ -32,7 +32,7 @@ public class WDB {
 				x = stdIn.nextInt();
 				try {
 					s.enque(x);
-				} catch (IntArrayQueue.OverflowIntArrayQueueException e) {
+				} catch (IntArrayQueue.OverflowIntQueueException e) {
 					System.out.println("큐가 가득 찼습니다.");
 				}
 				break;
@@ -41,7 +41,7 @@ public class WDB {
 				try {
 					x = s.deque();
 					System.out.println(" 디큐한 데이터는 " + x + "입니다.");
-				} catch (IntArrayQueue.EmptyIntArrayQueueException e) {
+				} catch (IntArrayQueue.EmptyIntQueueException e) {
 					System.out.println("큐가 비어 있습니다.");
 				}
 				break;
@@ -50,7 +50,7 @@ public class WDB {
 				try {
 					x = s.peek();
 					System.out.println("피크한 데이터는 " + x + "입니다.");
-				} catch (IntArrayQueue.EmptyIntArrayQueueException e) {
+				} catch (IntArrayQueue.EmptyIntQueueException e) {
 					System.out.println("큐가 비어 있습니다.");
 				}
 				break;
